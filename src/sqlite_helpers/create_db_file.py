@@ -1,6 +1,6 @@
 import sqlite3
 from sqlite3 import Error
-from src.logging_functions.class_logging import Logger
+from logging_functions.class_logging import Logger
 
 class CreateNewDBFile:
     logger = Logger("CreateNewDBFile").logger
