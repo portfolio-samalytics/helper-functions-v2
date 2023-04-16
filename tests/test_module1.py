@@ -1,6 +1,6 @@
 from sqlite_helpers.create_db_file import CreateNewDBFile
 from sqlite_helpers.create_table import CreateNewTable
-from sqlite_helpers.simple_actions import SQLiteActions
+from sqlite_helpers.sqlite_utils import SQLiteActions
 from sqlite_helpers.delete_table import DeleteTable
 import pandas as pd
 
