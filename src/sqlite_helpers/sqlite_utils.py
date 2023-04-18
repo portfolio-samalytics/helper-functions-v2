@@ -43,7 +43,7 @@ class SQLiteActions:
     def create_table(self, table, data):
         self.logger.info(f'Creating new table in {self.db_full} called {table}')
         try:
-            data.to_sql(name=data, con=self.conn)
+            data.to_sql(name=table, con=self.conn)
         except Exception as E:
             self.logger.info(f'Error Creating Table {E}')
 
