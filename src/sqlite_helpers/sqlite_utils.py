@@ -22,6 +22,7 @@ class SQLiteActions:
         return all_tables
 
     def load_table_data(self, table_name):
+        self.logger.info(f'Loading {table_name} table data from {self.db_full}')
         if table_name in self.list_all_tables():
             query = """  SELECT * FROM {table} """.format(table=table_name)
             table_data = pd.read_sql_query(query, con=self.conn)
